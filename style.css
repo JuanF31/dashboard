@@ -42,6 +42,14 @@ p{
     justify-content: space-between;
     flex-direction: column;
 }
+@media (max-height:548px) {
+    .bg-menu .buttons-nav a{
+        margin-bottom: 20px;
+    }
+    .bg-menu .buttons-nav a:last-child{
+        margin-bottom: 0;
+    }
+}
 .bg-menu .buttons-nav a{
     display: block;
     padding: 10px;
