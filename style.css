@@ -17,16 +17,11 @@ p{
     display: block;
     margin: 0 auto;
 }
-/* @media (min-width:768px) {
-    .dashboard{
-        flex-direction: row-reverse;
-    }
-} */
 .dashboard{
-    height: 100vh;
     flex-direction: row-reverse;
 }
 .dashboard .bg-profile, .dashboard .bg-menu{
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -36,13 +31,31 @@ p{
 .dashboard .bg-menu{
     background-image: url(/textura.png);
 }
+.bg-menu .buttons-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 .bg-menu .buttons-nav a{
     display: block;
-    background-color: #1f3660;
     padding: 10px;
+    text-align: start;
+    font-style: italic;
+    font-weight:600;
+    background-color: #1f3660;
+    color: #ECF2FF;
+    font-size: 16px;
+    border-radius: 9px
+}
+.buttons-nav a i{
+    background-color: #ECF2FF;
+    color: #1f3660;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 .footer{
-
+    height: auto;
     text-align: center;
     background-color: #1f3660;
 }
