@@ -20,10 +20,16 @@ p{
 .dashboard{
     flex-direction: row-reverse;
 }
+
 .dashboard .bg-profile, .dashboard .bg-menu{
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+}
+@media (max-height:548px) {
+    .dashboard .bg-profile, .dashboard .bg-menu{
+        height: auto;
+    }
 }
 .dashboard .bg-profile{
     background-image: url(/textura-panel.png);
