@@ -12,12 +12,49 @@
 </head>
 <body>
     <div class="row dashboard">
-        <div class="col-xl-3 col-lg-3 col-md-12 bg-profile">.</div>
+        <div class="col-xl-3 col-lg-3 col-md-12 bg-profile">
+            <div class="logout">
+                <li class="nav-item dropdown pt-4 px-4">
+                    <a class="icon_log_out" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <form method="POST" action="http://vmcorrea.test/logout">
+                                <input type="hidden" name="_token" value="NTF63e5YTtmSREsc1SfikeIH6IfLW0Aza153O6Gc">                                    <button type="submit" class="btn-logout">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    Cerrar Sesión
+                                </button>
+                            </form>
+                        </li>
+                    </ul>                        
+                </li> 
+            </div>
+
+            <div class="profile-container mx-4 pb-4">
+                <div class="photo-profile">
+                    <img src="avatar-default-masculino.png" width="100%" alt="">
+                </div>
+                <div class="body-profile">
+                    <p class="name mx-3">Lic. Dulce</p>
+                    <p class="surname mx-3">Mondragon Sanchez</p>
+                    <img src="icon-departamento-marketing.png" class="department-icon p-2" width="55" alt="">
+                    <p class="position mb-3">Jefe de Marketing</p>
+                </div>
+            </div>
+
+            <div class="courses mb-4">
+                <p>Cursos</p>
+                <p>Disponibles</p>
+            </div>
+
+        </div>
         <div class="col-xl-6 col-lg-6 col-md-12 flexbox-center">
-            <div class="row pb-4 pt-4">
+            <div class= "row pb-4 pt-4">
                 <div class="col-12 pb-4">
                     <img src="/logo-vmc-principal.png" class="img-center" alt="Logo VMCORREA" width="150">
                 </div>
+                
                 <div class="col-12 px-4">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/akAIv5pLJRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -38,5 +75,7 @@
         <p class="text-white pb-2">&copy;  VMCORREA 2022 | Todos los derechos reservados</p>
         <a class="text-white" href="#">Aviso de privacidad</a>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </body>
 </html>
